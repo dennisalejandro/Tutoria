@@ -4,6 +4,8 @@ using namespace std;
 void matrizMet(int**, int);
 int main() {
 	int const l = 10;
+	float a = 1.0;
+	cout << a << "\n";	
 	int** matriz = new int*[l];
 	for(int i=0;i<l;i++){
 		matriz[i]= new int[l];
@@ -12,7 +14,7 @@ int main() {
 		matriz[0][i] = i;
 	}
 	for (int i = 0;i < l;i++) {
-	cout << matriz[0][i];
+		cout << matriz[0][i];
 	}
 	matrizMet(matriz, l);
 	for (int i = 0;i < l;i++) {
@@ -25,4 +27,3 @@ void matrizMet(int** matriz,int l) {
 		matriz[0][i] = 0;
 	}
 }
-
